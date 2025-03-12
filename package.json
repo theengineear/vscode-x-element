@@ -1,0 +1,56 @@
+{
+  "name": "vscode-x-element",
+  "displayName": "x-element",
+  "icon": "icon.png",
+  "publisher": "theengineear",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theengineear/vscode-x-element"
+  },
+  "description": "",
+  "version": "1.3.3",
+  "license": "Apache-2.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript"
+  ],
+  "main": "./client/src/extension.js",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "XElement",
+      "properties": {
+        "XElement.maxNumberOfProblems": {
+          "scope": "resource",
+          "type": "number",
+          "default": 100,
+          "description": "Controls the maximum number of problems produced by the server."
+        },
+        "XElement.trace.server": {
+          "scope": "window",
+          "type": "string",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "default": "off",
+          "description": "Traces the communication between VS Code and the language server."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings=0 ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@netflix/eslint-config": "3.0.0",
+    "eslint": "9.21.0"
+  }
+}
