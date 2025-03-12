@@ -1,0 +1,11 @@
+{
+  "name": "vscode-x-element-client",
+  "description": "TODO",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "dependencies": {
+    "vscode-languageclient": "9.0.1"
+  }
+}

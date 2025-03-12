@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}",
+        // "/Users/aseier@netflix.com/Code/Personal/extension-test"
+        "/Users/aseier@netflix.com/Code/Work/nflx-data-client"
+      ]
+    }
+  ]
+}
